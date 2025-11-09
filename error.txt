@@ -1,0 +1,5 @@
+Line 28: INVALID_NUMBER_MULTIPLE_EXPONENTS -> "Logical test passed" (ERROR: invalid number - multiple exponents)
+Line 40: INVALID_NUMBER_MULTIPLE_EXPONENTS -> "Another string with escape \\n and \\t" (ERROR: invalid number - multiple exponents)
+Line 43: INVALID_CHAR -> '\n' (ERROR: invalid character format)
+Line 44: INVALID_CHAR -> '\t' (ERROR: invalid character format)
+Line 55: INVALID_NUMBER_MULTIPLE_EXPONENTS -> complexResult (ERROR: invalid number - multiple exponents)

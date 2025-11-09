@@ -1,0 +1,219 @@
+
+Adadi kya_yeh_kalima(const char *lafz) {
+    const char *kalimat[] = {
+   
+        "hum", "tum", "Wapas", "Agar", "Adadi", "Mantiqi", "shuru", "khatam",
+        "jabtak", "warna", "magar", "kidr", "socho", "dalo", "rahko", "pakka",
+        "aur", "keliye", "lo", "sahi", "galat", "ya", "nahi", "kaam", "wapis", "hatao",
+        "output<-",
+
+        NULL
+    };
+
+    jabtak (kalimat[i] != NULL) {
+        agar (strcmp(lafz, kalimat[i]) == 0)
+            wapas 1; // yeh kalima hai
+        i++;
+    }
+
+    wapas 0; 
+}
+
+Adadi shuru() {
+    likho("Roman Urdu Keyword Check Shuru Hua\\n");
+
+    agar (kya_yeh_kalima("hum"))
+        likho("Mila: hum\\n");
+    warna
+        likho("Nahi Mila\\n");
+
+    khatam 0;
+}
+
+123start @begin #first $variable %percent ^caret &ref *ptr
+456end @test #second $money %value ^power &addr *pointer
+789middle @var #third $price %rate ^exp &mem *data
+012begin @123 #456 $789 %012 ^345 &678 *901
+abc123def @abc123 #def456 $ghi789 %jkl012 ^mno345 &pqr678 *stu901
+123abc456 @123abc #456def $789ghi %012jkl ^345mno &678pqr *901stu
+
+
+12.34.56.78 1.2.3.4.5 99.88.77.66 0.1.2.3 123.456.789
+1.2.3.4e5.6 7.8.9.0e1.2 3.4e5.6.7 8.9e1.2.3 4.5.6e7.8
+12e34e56 78e90e12 34e56e78 90e12e34 56e78e90
+++123 --456 **789 //012 %%345 &&678 ||901
+..123 ...456 ....789 .....012 ......345
+0x123g 0b102 0o789a 0xabc 0b210 0o891
+123.456.789.012.345.678.901.234.567.890
+
+
+"unclosed string
+"another unclosed
+"bad escape \x"
+"invalid \y escape"
+"wrong \z sequence"
+"mixed 'quotes' inside"
+"unescaped " quote"
+"multiple issues \x \y \z"
+"too many escapes \\\\\\\\"
+"unfinished escape \
+"tab \t\t problem"
+"newline \n\n issue"
+
+'too long character'
+'very long invalid char'
+'multiple characters'
+'unescaped ' quote'
+'invalid \x escape'
+'wrong \y sequence'
+'too many \\\ escapes'
+'unfinished escape \'
+'empty'
+''
+'123'
+'!@#'
+'abc'
+'too long'
+
+
+@#!$%^&*() mixed symbols
+@@ ## $$ %% ^^ && ** (()) << >> 
++++ --- *** /// \\\ <<< >>> ===
+[[]] {{}} ;; :: ?? .. ,, ???
+@@@ ### $$$ %%% ^^^ &&& *** (((
+))) {{{ }}} [[[]]] ;;; ::: ??? ...
+@@#! $%^& *()_+ <>?:" {}|\ ~`
+!@#$%^&*()_+-=[]\{}|;':",./<>?
+
+
+"mixed 'quotes' here" 
+'and "here" we go'
+"single ' inside"
+'double " inside'
+"escaped \" quote ' inside"
+'escaped \' quote " inside'
+"multiple 'mixed' \"quotes\" 'here'"
+'various "mixed" \'quotes\' "here"'
+
+
+unclosed /* comment
+unclosed /* multi
+line comment
+without end
+unclosed "string literal
+unclosed "another string
+unclosed 'character
+unclosed 'another char
+
+
+// single line comment with // inside
+// another // comment // with // multiple // slashes
+/// triple slash
+//// four slashes
+///// five slashes
+//* mixed comment starters
+/*/ invalid comment combination
+/**/ valid but testing
+/***/ multiple stars
+
+
+"invalid \x escape"
+"wrong \y character"
+"bad \z sequence"
+"unknown \q escape"
+"strange \p sequence"
+"weird \r\n mix"
+"tab \t\t\t multiple"
+"newline \n\n\n multiple"
+"backslash \\\\\\ too many"
+"mixed \x\y\z invalid"
+
+
+123abc + 45.67.89 * @invalid / #wrong % $error
+"string" + 'char' * 12.34.56 / @test #value $result
+variable123! @special# $money% ^power& *data|
+func(param1, param2@, param3#, param4$)
+array[index@] object.property# class::method$ 
+ptr->member@ ref->field# obj->data$
+
+
+user@email.com 192.168.1.1 01/01/2023 12:30:45
++92-300-1234567 https://example.com firstName-lastName
+user.name variable123! price$ score# temp& value| result~
+file.txt folder/path class::method ptr->member array[index]
+obj.property func(param) a + b * c / d % e & f | g ^ h
+
+
+@1 @2 @3 @4 @5 @6 @7 @8 @9 @0
+#a #b #c #d #e #f #g #h #i #j
+$1 $2 $3 $4 $5 $6 $7 $8 $9 $0
+%a %b %c %d %e %f %g %h %i %j
+^1 ^2 ^3 ^4 ^5 ^6 ^7 ^8 ^9 ^0
+&a &b &c &d &e &f &g &h &i &j
+*1 *2 *3 *4 *5 *6 *7 *8 *9 *0
+
+
+
+
+
+@ @@@ @@@@@ @@@@@@@
+# ### ##### #######
+$ $$$ $$$$$ $$$$$$$
+% %% %%%% %%%%%%%%
+^ ^^ ^^^^ ^^^^^^^^
+& && &&&& &&&&&&&&
+* ** **** ********
+
+valid123 + @invalid * 45.67.89 / #wrong
+"proper string" + 'bad char' * 12.34.56 / @test
+hum x = @wrong + 99.88.77 / #error
+Agar (condition@) { socho "text"; }
+jabtak (counter# < 100) { result = result * 1.2.3.4; }
+
+
+@begin + #first * $variable / %percent ^ &result
+123start + 45.67.89 * @test / #value $ %end
+"string" + 'char' * 12.34.56 / @data # $result %
+func(@param1, #param2, $param3, %param4, ^param5)
+array[@index] obj.#property ptr->$member class::%method
+
+
+"unterminated string
+'unterminated char
+/* unterminated comment
+// unterminated single line actually okay
+"multiple
+line
+string
+'unclosed
+multi
+line
+char
+/* multi
+line
+comment
+without
+end
+
+
++++ --- *** /// \\\ <<< >>> === !== >=< <=>
+&&& ||| !!! ??? ::: ... ,,, ;;;
++=* -=/ *=% /=+ %=- =+* =-/ =*% =/+
+==! !=< >== <!= >=> <=< =>= =<=
+&| |& ^~ ~^ <<> >>< <>> ><<
+->. .<- ?:: :?? ::? ??:
+
+
+123.456.789.012 1.2.3.4.5.6.7.8.9 0.1.2.3.4.5.6.7.8.9
+12e34e56e78 90e12e34e56 78e90e12e34e56
+++123.456 --789.012 **345.678 //901.234
+..123.456 ...789.012 ....345.678
+0x123.456 0b101.010 0o765.432
+123abc.456def 789ghi.012jkl 345mno.678pqr
+
+
+@#!$%^&*()_+-=[]\{}|;':",./<>? 123abc 45.67.89 "unclosed 'char" /* unfinished
++++ --- *** /// \\\ <<< >>> === []] {{} ;: ?. ,, .. @1 #a $2 %b ^c &d *e
+"mixed 'quotes\" \\\x\y\z" 'and "here\' \\\a\b\c' 12.34.56.78 1.2.3.4e5.6
+unclosed /* multi line comment "and string" 'and char' without any ends
+

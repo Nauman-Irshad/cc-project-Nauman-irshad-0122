@@ -1,0 +1,115 @@
+=== URDU LEXER REGULAR EXPRESSIONS ===
+
+=== VALID IDENTIFIERS ===
+[a-zA-Z_][a-zA-Z0-9_]*
+
+=== INVALID IDENTIFIERS ===
+[@#$%^&*][a-zA-Z_][a-zA-Z0-9_]*
+[0-9]+[a-zA-Z_]+[a-zA-Z0-9_]*
+[0-9]+(\.[0-9]+)*[a-zA-Z_]+
+
+=== VALID NUMBERS ===
+=== Integers ===
+[+-]?[0-9]+
+
+=== Floating Point Numbers ===
+[0-9]*\.[0-9]+([Ee][+-]?[0-9]+)?
+[0-9]+\.([Ee][+-]?[0-9]+)?
+
+=== Exponential Numbers ===
+[0-9]+([Ee][+-]?[0-9]+)
+
+=== INVALID NUMBERS ===
+=== Multiple Decimal Points ===
+[0-9]+(\.[0-9]+){2,}
+
+=== Multiple Exponents ===
+[0-9]+([Ee][+-]?[0-9]+){2,}
+
+=== Numbers with Special Characters ===
+[@#$%^&*][0-9]+[a-zA-Z_]*
+
+=== Mixed Numbers and Letters ===
+[0-9]+[a-zA-Z_]+[a-zA-Z0-9_]*
+
+=== SPECIAL PATTERNS ===
+=== Multiple Dots ===
+\.{3,}
+
+=== Consecutive Operators ===
+"+++"|"---"|"***"|"///"|"\\\\\\\\"
+
+=== Special Symbol Combinations ===
+[@#$%^&*]{2,}
+
+=== Standalone Special Characters ===
+[@#$%^&*]
+
+=== Triple Slash ===
+"///"
+
+=== CHARACTER AND STRING PATTERNS ===
+=== Valid Strings ===
+\"[^"\n]*\"
+
+=== Invalid Strings ===
+\"[^"\n]*
+
+=== Valid Characters ===
+'[^'\\\n]'
+'\\[nrt0abfv\\'\"]'
+
+=== Invalid Characters ===
+'\\[^nrt0abfv\\'\"]'
+'[^'\n]*'
+'[^'\n]*
+
+=== COMMENT PATTERNS ===
+=== Single Line Comments ===
+"//"
+
+=== Multi-line Comments ===
+"/*"
+"*/"
+
+=== Unterminated Comments ===
+<COMMENT><<EOF>>
+
+=== OPERATORS ===
+"++"|"--"|"+="|"-="|"*="|"/="|"%="|"<<="|">>="|"&="|"^="|"|="
+"=="|"!="|">="|"<="|"&&"|"||"|"->"|"::"|"<-"|"=~"|"?"|":"
+"/"|"+"|"-"|"*"|"%"|"="|"!"|"&"|"|"|"^"|"~"|"<"|">"
+
+=== PUNCTUATION ===
+";"|","|"("|")"|"{"|"}"|"["|"]"|"."
+
+=== WHITESPACE AND NEWLINES ===
+[ \t]+
+\r\n|\n|\r
+
+=== UNKNOWN TOKENS ===
+.
+
+=== KEYWORDS (Urdu Programming Language) ===
+"hum"|"tum"|"Wapas"|"Agar"|"Adadi"|"Mantiqi"|"shuru"|"khatam"
+"jabtak"|"warna"|"magar"|"ucp"|"socho"|"dalo"|"rahko"|"pakka"
+"aur"|"keliye"|"lo"|"sahi"|"galat"|"ya"|"nahi"|"kaam"|"wapis"|"hatao"
+"output<-"
+
+=== ERROR TYPES DETECTED ===
+INVALID_IDENTIFIER
+INVALID_NUMBER
+INVALID_NUMBER_MULTIPLE_DOTS
+INVALID_NUMBER_MULTIPLE_EXPONENTS
+INVALID_NUMBER_FORMAT
+INVALID_OPERATOR_COMBINATION
+INVALID_SYMBOL_COMBINATION
+INVALID_SYMBOL
+INVALID_STRING
+INVALID_CHAR
+UNKNOWN_TOKEN
+
+=== LEXER STATES ===
+INITIAL
+COMMENT
+SINGLE_COMMENT
